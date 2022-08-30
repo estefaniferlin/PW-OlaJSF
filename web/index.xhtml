@@ -8,6 +8,7 @@
     </h:head>
     <h:body>
         <h1><h:outputText value="#{controleIndex.ola}"/></h1>
+        <h1><h:messages/></h1>
         <h2>
             <h:outputText value="#{controleIndex.dataSO.time}">
                 <f:convertDateTime pattern="dd/MM/yyyy HH:mm:ss:SSS"
@@ -18,6 +19,10 @@
         <h:form>
            <h:commandLink value="Sobre..."
                           action="#{controleIndex.sobre()}"/>
+           <h:commandLink value="Formulario..."
+                          action="#{controleFormulario.irFormulario()}"/>
+           <h:commandLink value="Ajax"
+                          action="#{controleAjax.irAjax()}"/>
         </h:form>
         
     </h:body>
